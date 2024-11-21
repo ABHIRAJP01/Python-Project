@@ -15,17 +15,53 @@ Seamless Integration with Pandas: Understanding how Seaborn works with Pandas Da
 This project demonstrates the use of the Seaborn library for data visualization. Below is the flowchart outlining the workflow for visualizing data with Seaborn.
 
 ```mermaid
-flowchart TD
-    A[Start] --> B[Load Dataset]
-    B --> C{Select Visualization Type}
-    C -->|Categorical Data| D[sns.barplot() or sns.countplot()]
-    C -->|Continuous Data| E[sns.histplot() or sns.kdeplot()]
-    C -->|Correlation Analysis| F[sns.heatmap() or sns.pairplot()]
-    D --> G[Customize Plot (Labels, Titles)]
-    E --> G
-    F --> G
-    G --> H[Interpret Results]
-    H --> I[End]
+graph TD
+    A[How to Use the Library]
+    
+    A1[1. Import Libraries]
+    A1a[pandas]
+    A1b[matplotlib]
+    A1c[seaborn_like_library]
+
+    A2[2. Prepare Data]
+    A2a[Create pandas DataFrame]
+    A2b[Example data with x and y columns]
+    
+    A3[3. Create Plot]
+    A3a[Scatter Plot function]
+    A3b[Line Plot function]
+    
+    A4[4. Customize Plot]
+    A4a[Set Labels]
+    A4b[Set Colors]
+    A4c[Set Theme]
+    
+    A5[5. Display or Save Plot]
+    A5a[Display Plot]
+    A5b[Save Plot]
+
+    A --> A1
+    A --> A2
+    A --> A3
+    A --> A4
+    A --> A5
+
+    A1 --> A1a
+    A1 --> A1b
+    A1 --> A1c
+    
+    A2 --> A2a
+    A2 --> A2b
+    
+    A3 --> A3a
+    A3 --> A3b
+    
+    A4 --> A4a
+    A4 --> A4b
+    A4 --> A4c
+    
+    A5 --> A5a
+    A5 --> A5b
 
 
 
