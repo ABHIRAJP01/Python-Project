@@ -10,6 +10,10 @@ Visualization of Datasets: Learn how to apply Seaborn methods to visualize a dat
 Enhanced Data Analysis: Ability to interpret complex data through visual representation, enhancing data-driven decision-making.
 Seamless Integration with Pandas: Understanding how Seaborn works with Pandas DataFrames to provide insightful visualizations directly from data structures.
 
+# Seaborn Project Flowchart
+
+This project demonstrates the use of the Seaborn library for data visualization. Below is the flowchart outlining the workflow for visualizing data with Seaborn.
+
 ```mermaid
 flowchart TD
     A[Start] --> B[Load Dataset]
@@ -22,6 +26,7 @@ flowchart TD
     F --> G
     G --> H[Interpret Results]
     H --> I[End]
+
 
 
 
