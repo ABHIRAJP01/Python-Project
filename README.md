@@ -12,20 +12,23 @@ Seamless Integration with Pandas: Understanding how Seaborn works with Pandas Da
 
 ```mermaid
 flowchart TD
-    A[<b style="color: #4CAF50">Start</b>] --> B[<b>Load Dataset</b>]
-    B --> C{<b style="color: #2196F3">Select Visualization Type</b>}
-    C -->|Categorical Data| D[<i>sns.barplot() or sns.countplot()</i>]
-    C -->|Continuous Data| E[<i>sns.histplot() or sns.kdeplot()</i>]
-    C -->|Correlation Analysis| F[<i>sns.heatmap() or sns.pairplot()</i>]
-    D --> G[<u>Customize Plot (Labels, Titles)</u>]
+    A[Start] --> B[Load Dataset]
+    B --> C{Select Visualization Type}
+    C -->|Categorical Data| D[sns.barplot() or sns.countplot()]
+    C -->|Continuous Data| E[sns.histplot() or sns.kdeplot()]
+    C -->|Correlation Analysis| F[sns.heatmap() or sns.pairplot()]
+    D --> G[Customize Plot (Labels, Titles)]
     E --> G
     F --> G
-    G --> H[<i style="color: #FF5722">Interpret Results</i>]
-    H --> I[<b style="color: #673AB7">End</b>]
+    G --> H[Interpret Results]
+    H --> I[End]
     
-    classDef nodeStyle fill:#f0f8ff,stroke:#2196F3,stroke-width:2px;
-    classDef startEndStyle fill:#e8f5e9,stroke:#4CAF50,stroke-width:2px;
-    classDef processStyle fill:#ffebee,stroke:#FF5722,stroke-width:2px;
     class A,I startEndStyle;
     class B,C,D,E,F processStyle;
     class G,H nodeStyle;
+
+    classDef startEndStyle fill:#e8f5e9,stroke:#4CAF50,stroke-width:2px;
+    classDef processStyle fill:#ffebee,stroke:#FF5722,stroke-width:2px;
+    classDef nodeStyle fill:#f0f8ff,stroke:#2196F3,stroke-width:2px;
+
+
