@@ -22,13 +22,5 @@ flowchart TD
     F --> G
     G --> H[Interpret Results]
     H --> I[End]
-    
-    class A,I startEndStyle;
-    class B,C,D,E,F processStyle;
-    class G,H nodeStyle;
-
-    classDef startEndStyle fill:#e8f5e9,stroke:#4CAF50,stroke-width:2px;
-    classDef processStyle fill:#ffebee,stroke:#FF5722,stroke-width:2px;
-    classDef nodeStyle fill:#f0f8ff,stroke:#2196F3,stroke-width:2px;
 
 
